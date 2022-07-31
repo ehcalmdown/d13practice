@@ -12,11 +12,11 @@ public class w13models {
     private String phone;
 
     public w13models(){
-       this.id= UUID.randomUUID().toString().substring(0, 8);
+       this.id= UUID.randomUUID().toString().substring(0, 8); //randomly generate 8 digit code
     }
 
     public String getId() {
-        return id;
+        return this.id;
     }
 
     public void setId(String id) {
@@ -45,6 +45,7 @@ public class w13models {
 
     public void setPhone(String phone) {
         this.phone = phone;
+    }
 
         @Override
         public String toString() {
